@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assests/fonts/Gilroy-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assests/fonts/Gilroy-Heavy.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assests/fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assests/fonts/Gilroy-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("./assests/fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme{
+    --font-gilroy: "Gilroy",sans-serif;
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #dddddd 50%,
+    #eeeeee 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
